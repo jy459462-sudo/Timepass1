@@ -43,17 +43,17 @@ from pyrogram.errors import (
 # CONFIG
 # ---------------------------------------------------------------------
 
-BOT_TOKEN = os.getenv('BOT_TOKEN', '8543596764:AAEs9_r-ZxteVct-7M1VsjhEQmiFAhrs5_Y')
-ADMIN_ID = int(os.getenv('ADMIN_ID', '7582601826'))
+BOT_TOKEN = os.getenv('BOT_TOKEN', '8550157035:AAFts4CXrSUe-zESbDQ8ZkF8GIAFGvlD--s')
+ADMIN_ID = int(os.getenv('ADMIN_ID', 'mongodb+srv://newoner390_db_user:newoner390_db_user@cluster0.ia8492q.mongodb.net/?appName=Cluster0'))
 MONGO_URL = os.getenv('MONGO_URL', 'mongodb+srv://userbot:userbot@cluster0.iweqz.mongodb.net/test?retryWrites=true&w=majority')
 API_ID = int(os.getenv('API_ID', '30038466'))
 API_HASH = os.getenv('API_HASH', '5a492a0dfb22b1a0b7caacbf90cbf96e')
 
 # MUST JOIN CHANNELS - TWO CHANNELS
-MUST_JOIN_CHANNEL_1 = "@BOT_HEART"
-MUST_JOIN_CHANNEL_2 = "@BOT_HEART2"
+MUST_JOIN_CHANNEL_1 = "@DADA_OTP_CHENNAL"
+MUST_JOIN_CHANNEL_2 = "@dada_store_sms"
 # LOG CHANNEL
-LOG_CHANNEL_ID = "-1002130890437"
+LOG_CHANNEL_ID = "-1003456141509"
 
 # Referral commission percentage
 REFERRAL_COMMISSION = 1.5
@@ -88,7 +88,7 @@ try:
     coupons_col = db['coupons']
     logger.info("✅ MongoDB connected successfully")
 except Exception as e:
-    logger.error(f"❌ MongoDB connection failed: {e}")
+    logger.e-1003456141509DB connection failed: {e}")
 
 # Store temporary data
 user_states = {}
@@ -518,7 +518,7 @@ def clean_ui_and_send_menu(chat_id, user_id, text=None, markup=None):
         
         # Main menu caption with expandable blockquotes
         caption = (
-            "🥂 <b>Welcome To Otp Bot By ROCKY_P4PA</b> 🥂\n"
+            "🥂 <b>Welcome To Otp Bot By JATINYADV001</b> 🥂\n"
             "<blockquote expandable>\n"
             "- Automatic OTPs 📍\n"
             "- Easy to Use 🥂🥂\n"
@@ -1042,7 +1042,7 @@ Click the buttons below to join both channels, then press VERIFY ✅"""
                 start(call.message)
                 return
             
-            msg_text = "🛠️ Support: @ROCKY_P4PA"
+            msg_text = "🛠️ Support: @@DADA_OTP_SUPPROT"
             markup = InlineKeyboardMarkup()
             markup.add(InlineKeyboardButton("⬅️ Back", callback_data="back_to_menu"))
             
@@ -2615,7 +2615,7 @@ def process_recharge_amount(msg):
         caption = f"""<blockquote>💳 <b>UPI Payment Details</b> 
 
 💰 Amount: {format_currency(amount)}
-📱 UPI ID: Chandaliya@fam
+📱 UPI ID: shubhamarya55555@fam
 
 📋 Instructions:
 1. Scan QR code OR send {format_currency(amount)} to above UPI
@@ -2634,7 +2634,7 @@ def process_recharge_amount(msg):
         
         bot.send_photo(
             msg.chat.id,
-            "https://files.catbox.moe/q8l080.jpg",
+            "https://ibb.co/n8ckdc9f",
             caption=caption,
             parse_mode="HTML",
             reply_markup=markup
